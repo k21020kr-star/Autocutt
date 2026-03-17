@@ -1,5 +1,5 @@
-const CACHE_NAME = 'autocutt-v1';
-const FILES = ['./index.html', './icon-192.png', './icon-512.png'];
+const CACHE_NAME = 'autocutt-v2';
+const FILES = ['./index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(FILES)));
